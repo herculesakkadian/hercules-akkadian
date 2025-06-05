@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة تحكم ViewBot لـ Kick</title>
+    <style>
+        body {
+            background-image: url("/static/bg.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Tahoma;
+            padding-top: 100px;
+        }
+        form {
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>لوحة تحكم ViewBot لـ Kick</h2>
+    <form method="POST">
+        <input type="text" name="url" placeholder="رابط الستريم" required><br>
+        <input type="number" name="count" placeholder="عدد المشاهدات" required><br>
+        <button type="submit">تشغيل</button>
+    </form>
+    <p>{{ message }}</p>
+</body>
+</html>
